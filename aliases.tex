@@ -1,0 +1,44 @@
+%%
+% aliases.tex
+% includes general aliases
+%%
+
+\newcommand{\Larrr}{\Longleftarrow}
+\newcommand{\Larr}{\Leftarrow}
+\newcommand{\Lrarrr}{\Longleftrightarrow}
+\newcommand{\Lrarr}{\Leftrightarrow}
+\newcommand{\Rarrr}{\Longrightarrow}
+\newcommand{\Rarr}{\Rightarrow}
+\newcommand{\darr}{\downarrow}
+\newcommand{\del}{\partial}
+\newcommand{\larrr}{\longleftarrow}
+\newcommand{\larr}{\leftarrow}
+\newcommand{\la}{\langle}
+\newcommand{\lrarrr}{\longleftrightarrow}
+\newcommand{\lrarr}{\leftrightarrow}
+\newcommand{\matwo}[4]{\begin{pmatrix} #1 & #2 \\ #3 & #4 \end{pmatrix}}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mr}{\mathrm}
+\newcommand{\ol}{\overline}
+\newcommand{\rarrr}{\longrightarrow}
+\newcommand{\rarr}{\rightarrow}
+\newcommand{\ra}{\rangle}
+\newcommand{\smc}{\textsc}
+\newcommand{\tbf}{\textbf}
+\newcommand{\uarr}{\uparrow}
+\newcommand{\vecthree}[3]{\begin{pmatrix} #1 \\ #2 \\ #3 \end{pmatrix}}
+\newcommand{\vectwo}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\renewcommand{\v}[1]{\symbf{#1}}
+
+% allow asian symbols in source code
+\newcommand{\kana}[1]{\begin{CJK}{UTF8}{min}#1\end{CJK}}
+
+%%% for Beamer documents %%%
+
+% includes a pic that spans the whole slide
+\newcommand{\slidegraphics}[1]{
+	\begin{center}
+		\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{#1}
+	\end{center}
+}
+

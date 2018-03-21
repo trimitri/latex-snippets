@@ -1,0 +1,11 @@
+# safe-to-drop TeX stuff
+*.synctex.gz
+*.tex.backup
+*-converted-to.pdf
+*.log
+*.bbl
+*.lof
+*.lot
+*.aux
+*.toc
+*.out

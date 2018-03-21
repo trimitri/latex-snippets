@@ -1,0 +1,50 @@
+\documentclass[
+	fontsize=20pt,   % maybe it makes math more beautiful
+	paper=20cm:8cm,  % custom flashcard like paper format
+	pagesize=pdftex, % do actually output pdf in that format
+	DIV=100          % very small margins
+]{scrartcl}
+\usepackage{amsmath, amssymb}
+\usepackage{slashed}        % Feynman-Slash-Notation
+\usepackage{physics}        % many useful macros
+\usepackage[bold-style=ISO,math-style=ISO]{unicode-math}
+
+%% processing commands:
+% ["xelatex", "tmp.tex"],
+% OPTIONAL ["pdfcrop", "--margins", ".5 .5 .5 .5", "tmp.pdf", "tmp.pdf"],
+% ["convert", "-trim", "-density", "600", "-resize", "50%", "tmp.pdf", "tmp.png"]
+
+\newcommand{\Larrr}{\Longleftarrow}
+\newcommand{\Larr}{\Leftarrow}
+\newcommand{\Lrarrr}{\Longleftrightarrow}
+\newcommand{\Lrarr}{\Leftrightarrow}
+\newcommand{\Rarrr}{\Longrightarrow}
+\newcommand{\Rarr}{\Rightarrow}
+\newcommand{\darr}{\downarrow}
+\newcommand{\del}{\partial}
+\newcommand{\df}{\operatorname δ}
+\newcommand{\gf}{\operatorname Γ}
+\newcommand{\inv}[1]{\frac{1}{#1}}
+\newcommand{\larrr}{\longleftarrow}
+\newcommand{\larr}{\leftarrow}
+\newcommand{\la}{\langle}
+\newcommand{\lrarrr}{\longleftrightarrow}
+\newcommand{\lrarr}{\leftrightarrow}
+\newcommand{\matwo}[4]{\begin{pmatrix} #1 & #2 \\ #3 & #4 \end{pmatrix}}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mr}{\mathrm}
+\newcommand{\ol}{\overline}
+\newcommand{\rarrr}{\longrightarrow}
+\newcommand{\rarr}{\rightarrow}
+\newcommand{\ra}{\rangle}
+\newcommand{\smc}{\textsc}
+\newcommand{\tbf}{\textbf}
+\newcommand{\uarr}{\uparrow}
+\newcommand{\vectwo}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+\renewcommand{\m}{\mathrm}
+\renewcommand{\tr}{\Tr}
+\renewcommand{\vec}[1]{\symbf{#1}}
+\renewcommand{\v}[1]{\symbf{#1}}
+
+\pagestyle{empty}
+\begin{document}

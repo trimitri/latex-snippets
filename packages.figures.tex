@@ -1,0 +1,31 @@
+% style figures
+
+\usepackage[margin=10pt,font={sf,small},labelfont=bf,format=plain]{caption}
+\usepackage{subcaption}  % provides subfigures
+\usepackage{placeins}	% \FloatBarrier
+
+\newlength{\subfloatspacing}
+\setlength{\subfloatspacing}{1em}
+\newlength{\subfloatii}
+\newlength{\subfloatiii}
+\newlength{\subfloativ}
+\newlength{\subfloatv}
+
+\AtBeginDocument{
+
+	% two subfloats in a row
+	\setlength{\subfloatii}{.5\textwidth}
+	\addtolength{\subfloatii}{-.5\subfloatspacing}
+
+	% three subfloats in a row
+	\setlength{\subfloatiii}{.3333\textwidth}
+	\addtolength{\subfloatiii}{-.6667\subfloatspacing}
+
+	% four subfloats in a row
+	\setlength{\subfloativ}{.25\textwidth}
+	\addtolength{\subfloativ}{-.75\subfloatspacing}
+
+	% five subfloats in a row
+	\setlength{\subfloatv}{.2\textwidth}
+	\addtolength{\subfloatv}{-.8\subfloatspacing}
+}

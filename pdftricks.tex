@@ -1,0 +1,20 @@
+% some advanced PDF trickery (comments and links)
+\usepackage[author={Franz Gutsch}]{pdfcomment}  % also loads hyperref!
+\hypersetup{hidelinks,bookmarksnumbered=true}  % hyperref was loaded by pdfcomment
+
+% Provide commands for text-marking a passage in the PDF and adding a
+% comment as to why it was marked. Perfect e.g. for known possible issues.
+\newcommand{\marknote}[2]%
+	{{\texorpdfstring{%
+		\pdfmarkupcomment[markup=Highlight,color=yellow]{#2}{#1}%
+	}{#2}}}
+
+\newcommand{\marktodo}[2]%
+	{{\texorpdfstring{%
+		\pdfmarkupcomment[markup=Highlight,color=orange]{#2}{#1}%
+	}{#2}}}
+
+\newcommand{\markfixme}[2]%
+	{{\texorpdfstring{%
+		\pdfmarkupcomment[markup=Highlight,color=red]{#2}{#1}%
+	}{#2}}}

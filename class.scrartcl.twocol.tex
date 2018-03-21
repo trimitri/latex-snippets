@@ -1,0 +1,23 @@
+%%
+% base.twocol.tex provides the document class and global definitions for
+% twocolumn documents
+%%
+
+\documentclass[
+		fontsize=11pt,
+		paper=a4,
+		twocolumn,
+		twoside,
+		BCOR=23mm,
+		DIV=calc
+]{scrartcl}
+\setlength{\columnsep}{2em}  % column spacing
+
+\AtBeginDocument{\recalctypearea} % other packages may differ font size etc.
+%\setlength{\columnseprule}{1pt}  % draws a rule between cols
+
+% settings for larger documents
+
+%\numberwithin{equation}{section}
+%\numberwithin{table}{section}
+%\numberwithin{figure}{section}

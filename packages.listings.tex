@@ -1,0 +1,45 @@
+% this preamble include enables us to show colorful code listings as floats
+
+\usepackage{listings}  % provides listings formatting
+\usepackage{float}     % lets us package the listings as floats
+\usepackage{color}
+
+% define code colors
+\definecolor{Comment}{RGB}{24,139,34}
+\definecolor{Identifier}{RGB}{0,0,0}
+\definecolor{Keyword}{RGB}{0,0,255}
+\definecolor{String}{RGB}{160,32,240}
+
+% Matlab code listings
+\lstset{
+	language=Matlab,
+	morekeywords={sind,cosd,pbaspect,ifftshift,ndims,strcat,tand,unique,xlim,ylim,classdef,properties,methods},
+%	float=hbp,
+	basicstyle=\ttfamily\footnotesize,
+	captionpos=t,
+	commentstyle=\color{Comment},
+	keywordstyle=\color{Keyword},
+	stringstyle=\color{String},
+% 	identifierstyle=\color{matlabIdentifier}, %matches all but numbers!
+ 	columns=flexible,  % relies on the font to be fixed-width
+	tabsize=2,
+	frame=single,
+	extendedchars=true,
+	numbers=left,
+	numberstyle=\ttfamily\small,
+	stepnumber=1,
+%	numberbychapter=true %listing number prefix
+%	numbersep=10pt,
+ 	showspaces=false,
+ 	showstringspaces=false,
+	breaklines=true,
+	breakautoindent=true
+}
+
+%create new float environment: listing, numberwithin: section
+\newfloat{listing}{tbp}{}[section]
+\floatname{listing}{Listing}
+
+%\AtBeginDocument{
+	%\numberwithin{lstlisting}{section} %listings.sty requires that to be declared after begin{document}
+%} 
