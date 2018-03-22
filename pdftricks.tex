@@ -18,3 +18,8 @@
 	{{\texorpdfstring{%
 		\pdfmarkupcomment[markup=Highlight,color=red]{#2}{#1}%
 	}{#2}}}
+
+% Add little speech bubble comments to the PDF.
+\newcommand{\note}[1]{\pdfcomment[color=yellow]{#1}}
+\newcommand{\todo}[1]{\pdfcomment[color=orange]{#1}}
+\newcommand{\fixme}[1]{\pdfcomment[color=red]{#1}}
