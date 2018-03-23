@@ -20,6 +20,6 @@
 	}{#2}}}
 
 % Add little speech bubble comments to the PDF.
-\newcommand{\note}[1]{\pdfcomment[color=yellow]{#1}}
-\newcommand{\todo}[1]{\pdfcomment[color=orange]{#1}}
-\newcommand{\fixme}[1]{\pdfcomment[color=red]{#1}}
+\newcommand{\note}[1]{\texorpdfstring{\pdfcomment[color=yellow]{#1}}{#1}}
+\newcommand{\todo}[1]{\texorpdfstring{\pdfcomment[color=orange]{#1}}{#1}}
+\newcommand{\fixme}[1]{\texorpdfstring{\pdfcomment[color=red]{#1}}{#1}}
