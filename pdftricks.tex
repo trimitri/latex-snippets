@@ -2,22 +2,27 @@
 \usepackage[author={Franz Gutsch}]{pdfcomment}  % also loads hyperref!
 \hypersetup{hidelinks,bookmarksnumbered=true}  % hyperref was loaded by pdfcomment
 
-% Provide commands for text-marking a passage in the PDF and adding a
-% comment as to why it was marked. Perfect e.g. for known possible issues.
-\newcommand{\marknote}[2]%
-	{{\texorpdfstring{%
-		\pdfmarkupcomment[markup=Highlight,color=yellow]{#2}{#1}%
-	}{#2}}}
+% Although it is very, very sad, the following doesn't work reliably for large
+% documents with multiple includes.  Maybe try re-enabling it as soon as
+% soulpos gets fixed:
+% https://bitbucket.org/kleberj/pdfcomment/issues/13/pdfmarkupcomment-not-visible-when-using
 
-\newcommand{\marktodo}[2]%
-	{{\texorpdfstring{%
-		\pdfmarkupcomment[markup=Highlight,color=orange]{#2}{#1}%
-	}{#2}}}
+%% Provide commands for text-marking a passage in the PDF and adding a
+%% comment as to why it was marked. Perfect e.g. for known possible issues.
+% \newcommand{\marknote}[2]%
+% 	{{\texorpdfstring{%
+% 		\pdfmarkupcomment[markup=Highlight,color=yellow]{#2}{#1}%
+% 	}{#2}}}
 
-\newcommand{\markfixme}[2]%
-	{{\texorpdfstring{%
-		\pdfmarkupcomment[markup=Highlight,color=red]{#2}{#1}%
-	}{#2}}}
+% \newcommand{\marktodo}[2]%
+% 	{{\texorpdfstring{%
+% 		\pdfmarkupcomment[markup=Highlight,color=orange]{#2}{#1}%
+% 	}{#2}}}
+
+% \newcommand{\markfixme}[2]%
+% 	{{\texorpdfstring{%
+% 		\pdfmarkupcomment[markup=Highlight,color=red]{#2}{#1}%
+% 	}{#2}}}
 
 % Add little speech bubble comments to the PDF.
 \newcommand{\note}[1]{\texorpdfstring{\pdfcomment[color=yellow]{#1}}{#1}}
